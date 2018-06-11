@@ -4,12 +4,17 @@ import android.support.v7.widget.DialogTitle
 
 class Category
 {
-    var title: String? = null
-    var image: String? = null
+    var title: String
+    var image: String
 
     constructor( title: String, image: String )
     {
         this.title = title
         this.image = image
+    }
+
+    override fun toString() : String
+    {
+        return title
     }
 }
